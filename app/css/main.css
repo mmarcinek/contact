@@ -1,0 +1,12 @@
+form {
+  width: 40%;
+  margin: 100px auto; }
+  form #name {
+    display: block; }
+  form #address {
+    display: block; }
+  form #email {
+    display: block; }
+  form button {
+    display: block;
+    text-align: center; }

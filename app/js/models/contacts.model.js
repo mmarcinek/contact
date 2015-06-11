@@ -1,4 +1,4 @@
-new Contact = Backbone.Model.extend({
+var Contact = new Backbone.Model.extend({
 
     initialize: function() {
         //initialize for testing of scripts in console only, comment out later:
@@ -7,7 +7,7 @@ new Contact = Backbone.Model.extend({
         this.logEmail();
         this.logPhone();
 
-    };
+    },
     // Returns Mongodb '_id' object as JSON 'id':
 
     idAttribute: '_id',
@@ -18,8 +18,8 @@ new Contact = Backbone.Model.extend({
         name: '',
         address: '',
         email: '',
-        phone:
-    };
+        phone: ''
+    },
 
     logName: function() {
         console.log(this.get('name'));

@@ -12,7 +12,9 @@
 
   <div>
     <form id="makeNewContact">
-      <input type="text" id="name" placeholder="Name">
+      <input type="text" id="firstName" placeholder="First Name">
+      <input type="text" id="lastName" placeholder="Last Name">
+
       <input type="text" id="address" placeholder="Address">
       <input type="text" id="email" placeholder="Email">
       <input type="text" id="phone" placeholder="Phone Number">
@@ -26,11 +28,12 @@
   <!-- VENDOR -->
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/underscore.js"></script>
+  <script src="js/vendor/backbone.js"></script>
   <script src="js/vendor/handlebars.js"></script>
   <!-- TEMPLATES -->
   <script src="js/templates.js"></script>
   <!-- MAIN -->
-  <script src="js/models/contacts/model.js"></script>
+  <script src="js/models/contacts.model.js"></script>
   <script src="js/collections/contacts.collection.js"></script>
   <script src="js/main.js"></script>
 

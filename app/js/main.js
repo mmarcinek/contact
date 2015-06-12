@@ -33,16 +33,18 @@ var newContact = $('#makeNewContact').on('submit', function (e){
   });
 
 // Gets data from fetch and appends to html via Handlebars template:
-  var addAllToView = function (list) {
-    var contactHtml = template.contacts(list);
 
-    $('#contacts').prepend(contactHtml);
-  };
 
   //resets form:
   this.reset();
 
 });
+
+  var addAllToView = function (list) {
+    var contactHtml = template.contacts(list);
+
+    $('#contacts').prepend(contactHtml);
+  };
 
 
 

@@ -3,6 +3,12 @@
 
 var allContacts = new ContactCollection();
 
+allContacts.fetch().done( function (){
+  allContacts.each( function ( contact) {
+    addAllToView(contact.attributes);
+  });
+});
+
 var newContact = $('#makeNewContact').on('submit', function (e){
 
   e.preventDefault();
@@ -26,6 +32,13 @@ var newContact = $('#makeNewContact').on('submit', function (e){
     addAllToView(data);
   });
 
+// Gets data from fetch and appends to html via Handlebars template:
+  var addAllToView = function (list) {
+    var contactHtml = template.contacts(list);
+
+    $('#contacts').prepend(contactHtml);
+  };
+
   //resets form:
   this.reset();
 
@@ -34,4 +47,3 @@ var newContact = $('#makeNewContact').on('submit', function (e){
 
 
 
-// On Submit creates newContact from HTML form:

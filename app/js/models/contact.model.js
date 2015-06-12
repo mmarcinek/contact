@@ -2,11 +2,11 @@ var Contact = Backbone.Model.extend({
 
     initialize: function() {
         //initialize for testing of scripts in console only, comment out later:
-        this.logfirst();
-        this.loglast();
-        this.logAddress();
-        this.logEmail();
-        this.logPhone();
+        // this.logfirst();
+        // this.loglast();
+        // this.logAddress();
+        // this.logEmail();
+        // this.logPhone();
 
     },
     // Returns Mongodb '_id' object as JSON 'id':
@@ -23,26 +23,26 @@ var Contact = Backbone.Model.extend({
         phone: ''
     },
 
-    // Function for testing constr
-    logfirst: function() {
-        console.log(this.get('first'));
-    },
+    // // Function for testing constr
+    // logfirst: function() {
+    //     console.log(this.get('first'));
+    // },
 
-    loglast: function (){
-        console.log(this.get('last'));
-    },
+    // loglast: function (){
+    //     console.log(this.get('last'));
+    // },
 
-    logAddress: function() {
-        console.log(this.get('address'));
-    },
+    // logAddress: function() {
+    //     console.log(this.get('address'));
+    // },
 
-    logEmail: function() {
-        console.log(this.get('email'));
-    },
+    // logEmail: function() {
+    //     console.log(this.get('email'));
+    // },
 
-    logPhone: function() {
-        console.log(this.get('phone'));
-    }
+    // logPhone: function() {
+    //     console.log(this.get('phone'));
+    // }
 
 });
 

@@ -2,15 +2,7 @@ form {
   width: 40%;
   margin: 100px auto;
 
-  #name {
-    display: block;
-  }
-
-  #address {
-    display: block;
-  }
-
-  #email {
+  input {
     display: block;
   }
 
@@ -19,3 +11,5 @@ form {
     text-align: center;
   }
 }
+
+

@@ -2,7 +2,8 @@ var Contact = new Backbone.Model.extend({
 
     initialize: function() {
         //initialize for testing of scripts in console only, comment out later:
-        this.logName();
+        this.logfirstName();
+        this.loglastName();
         this.logAddress();
         this.logEmail();
         this.logPhone();
@@ -22,7 +23,7 @@ var Contact = new Backbone.Model.extend({
     },
 
     logName: function() {
-        console.log(this.get('name'));
+        console.log(this.get('firstName'));
     },
 
     logAddress: function() {

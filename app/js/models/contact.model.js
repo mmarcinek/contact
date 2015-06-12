@@ -1,4 +1,4 @@
-var Contact = new Backbone.Model.extend({
+var Contact = Backbone.Model.extend({
 
     initialize: function() {
         //initialize for testing of scripts in console only, comment out later:
@@ -24,11 +24,11 @@ var Contact = new Backbone.Model.extend({
     },
 
     // Function for testing constr
-    logfirstName: function() {
+    logfirst: function() {
         console.log(this.get('first'));
     },
 
-    loglastName: function (){
+    loglast: function (){
         console.log(this.get('last'));
     },
 

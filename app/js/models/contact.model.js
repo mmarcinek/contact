@@ -2,8 +2,8 @@ var Contact = new Backbone.Model.extend({
 
     initialize: function() {
         //initialize for testing of scripts in console only, comment out later:
-        this.logfirstName();
-        this.loglastName();
+        this.logfirst();
+        this.loglast();
         this.logAddress();
         this.logEmail();
         this.logPhone();
@@ -16,14 +16,20 @@ var Contact = new Backbone.Model.extend({
     // default attributes of our Contact
 
     defaults: {
-        name: '',
+        first: '',
+        last: '',
         address: '',
         email: '',
         phone: ''
     },
 
-    logName: function() {
-        console.log(this.get('firstName'));
+    // Function for testing constr
+    logfirstName: function() {
+        console.log(this.get('first'));
+    },
+
+    loglastName: function (){
+        console.log(this.get('last'));
     },
 
     logAddress: function() {

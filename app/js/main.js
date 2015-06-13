@@ -34,9 +34,9 @@ var newContact = $('#makeNewContact').on('submit', function (e){
 
 // Gets data from fetch and appends to html via Handlebars template:
 
-
   //resets form:
   this.reset();
+
 
 });
 
@@ -45,6 +45,26 @@ var newContact = $('#makeNewContact').on('submit', function (e){
 
     $('#contacts').prepend(contactHtml);
   };
+
+
+  var removeContact = function(e){
+  e.preventDefault();
+  console.log('hello');
+  var contactDelete = $(this).parent();
+  var listDelete = contactDelete.attr('id');
+
+
+  $.ajax ({
+  url: url + '/' + listDelete,
+  type: 'DELETE'
+  }).done( function (){
+    contactDelete.remove();
+  });
+};
+
+
+var url = 'http://tiy-515.herokuapp.com/collections/contact_mike';
+$('div').on('click', 'p', removeContact);
 
 
 

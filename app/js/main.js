@@ -49,22 +49,25 @@ var newContact = $('#makeNewContact').on('submit', function (e){
 
   var removeContact = function(e){
   e.preventDefault();
-  console.log('hello');
-  var contactDelete = $(this).parent();
-  var listDelete = contactDelete.attr('id');
+  var deleteContact = $(this).parent();
+  console.log(deleteContact);
+  // var idDel = deleteContact.attr('id');
+  // console.log(idDel);
+  var idDel = deleteContact.attr('id');
 
 
   $.ajax ({
-  url: url + '/' + listDelete,
+  url: url + '/' + idDel,
   type: 'DELETE'
   }).done( function (){
-    contactDelete.remove();
+    deleteContact.fadeOut().remove();
   });
 };
 
 
 var url = 'http://tiy-515.herokuapp.com/collections/contact_mike';
-$('div').on('click', 'p', removeContact);
+
+$('ul').on('click', 'h3', removeContact);
 
 
 

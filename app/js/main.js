@@ -9,7 +9,8 @@ allContacts.fetch().done( function (){
   });
 });
 
-var newContact = $('#makeNewContact').on('submit', function (e){
+// Creates new Contact from form
+var newContact = function (e){
 
   e.preventDefault();
   // Gets values from input and sets as variable for constructor
@@ -32,20 +33,19 @@ var newContact = $('#makeNewContact').on('submit', function (e){
     addAllToView(data);
   });
 
-// Gets data from fetch and appends to html via Handlebars template:
-
   //resets form:
   this.reset();
 
+};
 
-});
-
+// Gets data from fetch and appends to html via Handlebars template:
   var addAllToView = function (list) {
     var contactHtml = template.contacts(list);
 
     $('#contacts').prepend(contactHtml);
   };
 
+ // Removes contact from Server and HTML:
 
   var removeContact = function(e){
   e.preventDefault();
@@ -55,7 +55,6 @@ var newContact = $('#makeNewContact').on('submit', function (e){
   // console.log(idDel);
   var idDel = deleteContact.attr('id');
 
-
   $.ajax ({
   url: url + '/' + idDel,
   type: 'DELETE'
@@ -64,11 +63,10 @@ var newContact = $('#makeNewContact').on('submit', function (e){
   });
 };
 
-
+//Server URL. Need to look into possibility of pulling this deirectly from the Collection:
 var url = 'http://tiy-515.herokuapp.com/collections/contact_mike';
 
 $('ul').on('click', 'h3', removeContact);
-
-
+$('#makeNewContact').on('submit', newContact);
 
 

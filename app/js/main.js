@@ -15,14 +15,14 @@ var newContact = $('#makeNewContact').on('submit', function (e){
   // Gets values from input and sets as variable for constructor
   var firstName = $(this).find('#firstName').val();
   var lastName = $(this).find('#lastName').val();
-  var address = $(this).find('#address').val();
   var email = $(this).find('#email').val();
+  var twitter = $(this).find('#twitter').val();
   var phone = $(this).find('#phone').val();
 
   var entry = new Contact ({
     first: firstName,
     last: lastName,
-    address: address,
+    twitter: twitter,
     email: email,
     phone: phone
   });

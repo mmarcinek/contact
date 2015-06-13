@@ -18,7 +18,7 @@ var Contact = Backbone.Model.extend({
     defaults: {
         first: '',
         last: '',
-        address: '',
+        twitter: '',
         email: '',
         phone: ''
     },

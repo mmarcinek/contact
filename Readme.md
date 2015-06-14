@@ -1,7 +1,10 @@
-## Welcome to My Repo
+## Welcome to inTouch
 
-> I am your Readme.md file, you should probably update me.
+This is a light application that stores contact information, it utilizes backbone.js for models and collections, and is fully scalable from mobile to hi-def screens. To run this application be sure to navigate to the project directory:
+run `npm install`: to install node packages and
+`bower install` to load bower packages;
 
+The dependencies can be found in the bower.json and package.json files.
 
 ## Usage
 

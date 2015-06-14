@@ -19,8 +19,7 @@ nav {
   background-image: linear-gradient(#999, #ddd, , , , , , , , );
   font-family: "Poiret One", sans-serif;
   font-size: 1.8em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  height: 65px; }
+  height: 100px; }
   nav .logo {
     margin-left: 30px; }
     nav .logo i {
@@ -31,11 +30,13 @@ nav {
 /* Form Styles
 ==============*/
 .input {
+  background-color: #ddd;
+  background-image: -webkit-linear-gradient(#ddd, #999);
+  background-image: linear-gradient(#ddd, #999, , , , , , , , );
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 14.70196%;
-  border: 1px solid #d2d2d2;
   height: 100vh; }
   .input:last-child {
     margin-right: 0; }
@@ -69,6 +70,8 @@ nav {
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
+    padding-top: 20px;
+    padding-left: 25px;
     border: 1px solid #d2d2d2; }
     .list ul:last-child {
       margin-right: 0; }
@@ -80,7 +83,9 @@ nav {
       border-radius: 5px;
       font-size: 0.8em;
       width: 50px;
-      text-align: center; }
+      text-align: center;
+      margin-right: 20px;
+      margin-left: auto; }
     .list ul h3:hover {
       background-color: red;
       color: white; }

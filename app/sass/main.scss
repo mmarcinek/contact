@@ -17,8 +17,7 @@ nav {
   @include linear-gradient(#999, #ddd);
   font-family: $fontLogo;
   font-size: 1.8em;
-  border-bottom: 1px solid rgba(0,0,0, 0.3);
-  height: 65px;
+  height: 100px;
 
   .logo {
     margin-left: 30px;
@@ -39,9 +38,10 @@ nav {
 /* Form Styles
 ==============*/
 .input {
+  @include linear-gradient(#ddd, #999);
   @include span-columns(2);
-  border: 1px solid rgba(210, 210, 210, 1);
   height: 100vh;
+
 
   form {
     font-size: 1.5em;
@@ -81,6 +81,8 @@ nav {
 
   ul {
       @include span-columns(3);
+      padding-top: 20px;
+      padding-left: 25px;
       border: 1px solid rgba(210, 210, 210, 1);
 
     li {
@@ -94,11 +96,14 @@ nav {
     font-size: 0.8em;
     width: 50px;
     text-align: center;
+    margin-right: 20px;
+    margin-left: auto;
   }
 
   h3:hover {
     background-color: rgba(255, 0, 0, 1);
     color: white;
+
   }
 }
 }

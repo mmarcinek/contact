@@ -6,30 +6,8 @@ html {
 *::before {
   box-sizing: inherit; }
 
-.container {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 62.5%;
-  width: 100%; }
-
 /* Nav Styles
 =============*/
-nav {
-  background-color: #9ab;
-  background-image: -webkit-linear-gradient(#9ab, #ddd);
-  background-image: linear-gradient(#9ab, #ddd, , , , , , , , );
-  font-family: "Poiret One", sans-serif;
-  font-size: 1.8em;
-  height: 115px; }
-  nav .logo {
-    margin-left: 40px;
-    padding-top: 10px; }
-    nav .logo i {
-      display: inline-block; }
-    nav .logo h1 {
-      display: inline-block; }
-
-/* Form Styles
-==============*/
 .input {
   background-color: #dedede;
   background-image: -webkit-linear-gradient(#dedede, #9ab);
@@ -43,40 +21,12 @@ nav {
   border-right: 1px solid #c8c8c8; }
   .input:last-child {
     margin-right: 0; }
-  .input form {
-    font-size: 1.5em;
-    margin-top: 50px; }
-    .input form input {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; }
-    .input form input:focus {
-      outline: 1px solid green; }
-    .input form button {
-      display: block;
-      text-align: center;
-      background-color: green;
-      border: 1px solid green;
-      color: white;
-      border-radius: 5px;
-      margin-top: 5px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 152px; }
-    .input form button:hover {
-      -webkit-transition: all 0.1s ease-in-out;
-      -moz-transition: all 0.1s ease-in-out;
-      transition: all 0.1s ease-in-out;
-      background-color: white;
-      color: green; }
 
-/* Contact List Style
-=====================*/
 .list {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
+  width: 31.76157%;
   color: #999;
   font-size: 1.8em;
   margin-top: 50px; }
@@ -114,7 +64,3 @@ nav {
   transition: all 0.3s ease-in-out;
   background-color: #fff;
   color: #000; }
-
-footer {
-  height: 20px;
-  width: 100%; }

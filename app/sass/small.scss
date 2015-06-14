@@ -1,0 +1,64 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+.input {
+  @include linear-gradient(#dedede, #9ab);
+  // @include span-columns();
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid rgba(200, 200, 200, 1);
+
+  form {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    input {
+      width: 300px;
+    }
+  }
+}
+
+.list {
+  @include span-columns(6);
+  @include omega(2n);
+  color: #999;
+  font-size: 1.8em;
+  margin-top: 50px;
+
+  ul {
+    padding-top: 20px;
+    padding-left: 25px;
+    background-color: #fefefe;
+    border: 1px solid rgba(210, 210, 210, 1);
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px rgba(210, 210, 210, 1);
+    width: 270px;
+
+    li {
+      list-style-type: none;
+    }
+
+  h3 {
+    @include transition(all 0.1s ease-in-out);
+    border: 1px solid red;
+    color: red;
+    border-radius: 5px;
+    font-size: 0.8em;
+    width: 50px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: auto;
+  }
+
+  h3:hover {
+    background-color: rgba(255, 0, 0, 1);
+    color: white;
+  }
+}
+}
+
+.list:hover {
+  @include transition(all 0.3s ease-in-out);
+  background-color: #fff;
+  color: #000;
+}

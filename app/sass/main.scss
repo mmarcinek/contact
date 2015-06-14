@@ -10,6 +10,16 @@ $fontBody: 'Source Sans Pro', sans-serif;
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: #999;
+
+}
+
+a:hover {
+  cursor: pointer;
+}
+
 /* Nav Styles
 =============*/
 
@@ -126,6 +136,11 @@ nav {
   @include transition(all 0.3s ease-in-out);
   background-color: #fff;
   color: #000;
+
+  a {
+    @include transition(all 0.3s ease-in-out);
+    color: black;
+  }
 }
 
 footer {

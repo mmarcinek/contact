@@ -37,7 +37,8 @@ nav {
   display: block;
   margin-right: 2.35765%;
   width: 14.70196%;
-  height: 100vh; }
+  height: 100vh;
+  border-right: 1px solid #c8c8c8; }
   .input:last-child {
     margin-right: 0; }
   .input form {
@@ -63,18 +64,18 @@ nav {
 /* Contact List Style
 =====================*/
 .list {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
   font-size: 1.8em;
   margin-top: 50px; }
+  .list:last-child {
+    margin-right: 0; }
   .list ul {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%;
     padding-top: 20px;
     padding-left: 25px;
     border: 1px solid #d2d2d2; }
-    .list ul:last-child {
-      margin-right: 0; }
     .list ul li {
       list-style-type: none; }
     .list ul h3 {

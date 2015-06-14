@@ -41,6 +41,7 @@ nav {
   @include linear-gradient(#ddd, #999);
   @include span-columns(2);
   height: 100vh;
+  border-right: 1px solid rgba(200, 200, 200, 1);
 
 
   form {
@@ -76,11 +77,11 @@ nav {
 =====================*/
 
 .list {
+  @include span-columns(3);
   font-size: 1.8em;
   margin-top: 50px;
 
   ul {
-      @include span-columns(3);
       padding-top: 20px;
       padding-left: 25px;
       border: 1px solid rgba(210, 210, 210, 1);

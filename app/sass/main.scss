@@ -129,6 +129,17 @@ nav {
 }
 
 footer {
-  height: 20px;
+  @include linear-gradient(#A6B4C2, #9ab);
+  position: fixed;
+  bottom: 0;
   width: 100%;
+  height: 55px;
+
+  h3{
+    font-family: $fontLogo;
+    text-align: center;
+    font-size: 0.95em;
+    padding-top: 10px;
+  }
+
 }

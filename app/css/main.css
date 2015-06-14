@@ -1,8 +1,86 @@
-form {
-  width: 40%;
-  margin: 100px auto; }
-  form input {
-    display: block; }
-  form button {
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+.container {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 62.5%;
+  width: 100%; }
+
+/* Nav Styles
+=============*/
+nav {
+  background-color: #999;
+  background-image: -webkit-linear-gradient(#999, #ddd);
+  background-image: linear-gradient(#999, #ddd, , , , , , , , );
+  font-family: "Poiret One", sans-serif;
+  font-size: 1.8em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  height: 65px; }
+  nav .logo {
+    margin-left: 30px; }
+    nav .logo i {
+      display: inline-block; }
+    nav .logo h1 {
+      display: inline-block; }
+
+/* Form Styles
+==============*/
+.input {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  border: 1px solid #d2d2d2;
+  height: 100vh; }
+  .input:last-child {
+    margin-right: 0; }
+  .input form {
+    font-size: 1.5em;
+    margin-top: 50px; }
+    .input form input {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+    .input form button {
+      display: block;
+      text-align: center;
+      background-color: white;
+      border: 1px solid green;
+      color: green;
+      border-radius: 5px;
+      margin-left: auto;
+      margin-right: auto; }
+    .input form button:hover {
+      background-color: green;
+      color: white; }
+
+/* Contact List Style
+=====================*/
+.list {
+  font-size: 1.8em;
+  margin-top: 50px; }
+  .list ul {
+    float: left;
     display: block;
-    text-align: center; }
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    border: 1px solid #d2d2d2; }
+    .list ul:last-child {
+      margin-right: 0; }
+    .list ul li {
+      list-style-type: none; }
+    .list ul h3 {
+      border: 1px solid red;
+      color: red;
+      border-radius: 5px;
+      font-size: 0.8em;
+      width: 50px;
+      text-align: center; }
+    .list ul h3:hover {
+      background-color: red;
+      color: white; }

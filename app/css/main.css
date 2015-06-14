@@ -19,9 +19,10 @@ nav {
   background-image: linear-gradient(#999, #ddd, , , , , , , , );
   font-family: "Poiret One", sans-serif;
   font-size: 1.8em;
-  height: 100px; }
+  height: 115px; }
   nav .logo {
-    margin-left: 30px; }
+    margin-left: 40px;
+    padding-top: 10px; }
     nav .logo i {
       display: inline-block; }
     nav .logo h1 {
@@ -30,9 +31,9 @@ nav {
 /* Form Styles
 ==============*/
 .input {
-  background-color: #ddd;
-  background-image: -webkit-linear-gradient(#ddd, #999);
-  background-image: linear-gradient(#ddd, #999, , , , , , , , );
+  background-color: #dedede;
+  background-image: -webkit-linear-gradient(#dedede, #999);
+  background-image: linear-gradient(#dedede, #999, , , , , , , , );
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -48,18 +49,25 @@ nav {
       display: block;
       margin-left: auto;
       margin-right: auto; }
+    .input form input:focus {
+      outline: 1px solid green; }
     .input form button {
       display: block;
       text-align: center;
-      background-color: white;
-      border: 1px solid green;
-      color: green;
-      border-radius: 5px;
-      margin-left: auto;
-      margin-right: auto; }
-    .input form button:hover {
       background-color: green;
-      color: white; }
+      border: 1px solid green;
+      color: white;
+      border-radius: 5px;
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 152px; }
+    .input form button:hover {
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+      background-color: white;
+      color: green; }
 
 /* Contact List Style
 =====================*/
@@ -68,6 +76,8 @@ nav {
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
+  background-color: #fefefe;
+  color: #999;
   font-size: 1.8em;
   margin-top: 50px; }
   .list:last-child {
@@ -75,10 +85,14 @@ nav {
   .list ul {
     padding-top: 20px;
     padding-left: 25px;
-    border: 1px solid #d2d2d2; }
+    border: 1px solid #d2d2d2;
+    border-radius: 5px; }
     .list ul li {
       list-style-type: none; }
     .list ul h3 {
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
       border: 1px solid red;
       color: red;
       border-radius: 5px;
@@ -90,3 +104,10 @@ nav {
     .list ul h3:hover {
       background-color: red;
       color: white; }
+
+.list:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  color: #000; }

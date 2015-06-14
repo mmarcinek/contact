@@ -17,10 +17,11 @@ nav {
   @include linear-gradient(#999, #ddd);
   font-family: $fontLogo;
   font-size: 1.8em;
-  height: 100px;
+  height: 115px;
 
   .logo {
-    margin-left: 30px;
+    margin-left: 40px;
+    padding-top: 10px;
 
     i {
       display: inline-block;
@@ -30,15 +31,13 @@ nav {
       display: inline-block;
     }
   }
-
-
 }
 
 
 /* Form Styles
 ==============*/
 .input {
-  @include linear-gradient(#ddd, #999);
+  @include linear-gradient(#dedede, #999);
   @include span-columns(2);
   height: 100vh;
   border-right: 1px solid rgba(200, 200, 200, 1);
@@ -55,20 +54,28 @@ nav {
       margin-right: auto;
     }
 
+    input:focus {
+      outline: 1px solid green;
+    }
+
     button {
       display: block;
       text-align: center;
-      background-color: white;
+      background-color: green;
       border: 1px solid green;
-      color: green;
+      color: white;
       border-radius: 5px;
+      margin-top: 5px;
       margin-left: auto;
       margin-right: auto;
+      width: 152px;
+
     }
 
     button:hover {
-      background-color: green;
-      color: white;
+      @include transition(all 0.1s ease-in-out);
+      background-color: white;
+      color: green;
     }
   }
 }
@@ -78,19 +85,23 @@ nav {
 
 .list {
   @include span-columns(3);
+  background-color: #fefefe;
+  color: #999;
   font-size: 1.8em;
   margin-top: 50px;
 
   ul {
-      padding-top: 20px;
-      padding-left: 25px;
-      border: 1px solid rgba(210, 210, 210, 1);
+    padding-top: 20px;
+    padding-left: 25px;
+    border: 1px solid rgba(210, 210, 210, 1);
+    border-radius: 5px;
 
     li {
       list-style-type: none;
     }
 
   h3 {
+    @include transition(all 0.1s ease-in-out);
     border: 1px solid red;
     color: red;
     border-radius: 5px;
@@ -104,7 +115,12 @@ nav {
   h3:hover {
     background-color: rgba(255, 0, 0, 1);
     color: white;
-
   }
 }
+}
+
+.list:hover {
+  @include transition(all 0.3s ease-in-out);
+  background-color: #fff;
+  color: #000;
 }

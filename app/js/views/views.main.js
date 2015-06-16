@@ -15,11 +15,17 @@
   },
 
   render: function (e){
-    console.log('Hello');
+    var self = this;
 
-    allContacts.add(entry).save().success( function(data){
-    addAllToView(data);
+    this.collection.each( function (aContact){
+
+      var renderedHtml = self.template(aContact.toJSON());
+      self.$el.find('#students').append(renderedHtml);
+
+    // allContacts.add(entry).save().success( function(data){
+    // addAllToView(data);
     });
+    })
 
   }
 

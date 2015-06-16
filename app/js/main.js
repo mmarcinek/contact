@@ -51,8 +51,7 @@ var newContact = function (e){
   e.preventDefault();
   var deleteContact = $(this).parent();
   console.log(deleteContact);
-  // var idDel = deleteContact.attr('id');
-  // console.log(idDel);
+
   var idDel = deleteContact.attr('id');
 
   $.ajax ({

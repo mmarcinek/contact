@@ -12,10 +12,10 @@
 
     });
 
-  allContacts.fetch().done( function (){
-    allContacts.each( function ( contact) {
-      addAllToView(contact.attributes);
-    });
+  // allContacts.fetch().done( function (){
+  //   allContacts.each( function ( contact) {
+  //     addAllToView(contact.attributes);
+  //   });
 
   });
 

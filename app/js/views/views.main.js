@@ -20,6 +20,7 @@
     this.collection.each( function (aContact){
 
       var renderedHtml = self.template(aContact.toJSON());
+
       self.$el.find('#students').append(renderedHtml);
 
     // allContacts.add(entry).save().success( function(data){
